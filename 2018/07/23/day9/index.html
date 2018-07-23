@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 世界和平</title>
+  <title>G Python-集合相关操作 | 世界和平</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="世界和平">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="#输出一个集合set1={1,2,3,5,7,8}print(set1) #空集合set2=set()print(type(set2))">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="G Python-集合相关操作">
+<meta property="og:url" content="http://yoursite.com/2018/07/23/day9/index.html">
 <meta property="og:site_name" content="世界和平">
+<meta property="og:description" content="#输出一个集合set1={1,2,3,5,7,8}print(set1) #空集合set2=set()print(type(set2))">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-23T10:27:42.876Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="世界和平">
+<meta name="twitter:title" content="G Python-集合相关操作">
+<meta name="twitter:description" content="#输出一个集合set1={1,2,3,5,7,8}print(set1) #空集合set2=set()print(type(set2))">
   
     <link rel="alternative" href="/atom.xml" title="世界和平" type="application/atom+xml">
   
@@ -150,36 +155,83 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-day9" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      G Python-集合相关操作
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day9/" class="archive-article-date">
+
+        
+        <a href="/2018/07/23/day9/" class="archive-article-date">
   	<time datetime="2018-07-23T10:35:20.859Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day9/">G Python-集合相关操作</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#输出一个集合<br>set1={1,2,3,5,7,8}<br>print(set1)</p>
+<p>#空集合<br>set2=set()<br>print(type(set2))<br><a id="more"></a><br>这里更多的内容</p>
+<p>#字符串转为集合<br>set3=set(‘abcd’)<br>print(set3)</p>
+<p>#列表转为集合<br>set3=set([1,2,3])<br>print(set3)</p>
+<p>#字典转为集合<br>set3=set({‘A’:’Anglebaby’,’B’:’Bigbang’,’C’:’C&amp;A’,’D’:’DQ’})<br>print(set3)</p>
+<p>#元组转为集合<br>set4=set((1,1,2,4,7,1,2,4,2,4,5,’A’,’a’))<br>set5=set((‘4’,’5’,’A’,’a’))<br>set6={(‘C’,’C&amp;A’),(‘A’,’Anglebaby’),(‘B’,’Bigbang’),(‘D’,’DQ’,’Date’)}<br>print(set4)</p>
+<p>#len取长度的时候，是去除重复后的长度<br>print(len(set4))</p>
+<p>#max，min比较，int和str类型不能一起比较，单独比较字符，AsCii比较，如果想要让数字和字符进行比较，需要把数字转为数字字符串<br>print(max(set5))</p>
+<p>#遍历集合<br>for i in set5:<br>    print(i)<br>for i,j in set6:<br>    print(i,j)<br>for i in set6:<br>    for j in i:<br>        print(j)</p>
+<p>#else返回<br>for i in set6:<br>    if ‘Anglebaby’ in i:<br>        print(‘存在’)<br>set7={‘上单’,’中单’,’打野’,’射手’,’辅助’}<br>print(set7)</p>
+<p>#add在集合添加一个元素<br>print(set7.add(‘法师’))</p>
+<p>#pop在集合随机删除一个元素，若集合为列表或元组，则删除左边第一个元素<br>print(set7.pop())<br>print(set7.pop())<br>print(set7)<br>set8=set([‘上单’,’中单’,’打野’,’射手’,’辅助’])<br>print(set8)<br>print(set8.discard(‘射手’))</p>
+<h1 id="print-set8-pop"><a href="#print-set8-pop" class="headerlink" title="print(set8.pop())"></a>print(set8.pop())</h1><h1 id="print-set8-pop-1"><a href="#print-set8-pop-1" class="headerlink" title="print(set8.pop())"></a>print(set8.pop())</h1><h1 id="print-set8-pop-2"><a href="#print-set8-pop-2" class="headerlink" title="print(set8.pop())"></a>print(set8.pop())</h1><p>print(set8)</p>
+<p>#help(set()) 查看所有几个函数<br>s1 = set([1, 2, ‘3’])<br>s2 = set([2, 3, 4])</p>
+<p>#intersection交集<br>print(s1.intersection(s2))</p>
+<p>#并集union<br>print(s1.union(s2))</p>
+<p>#差集difference<br>print(s1.difference(s2))<br>print(s2.difference(s1))</p>
+<p>#对称差symmetric_difference</p>
+<p>print(s2.symmetric_difference(s1))</p>
+<p>#子集issubset和超集issuperset<br>sSet=set([1,2,3])<br>bSet=set([1,2,3,4,5,6])<br>print(sSet.issubset(bSet))<br>print(bSet.issuperset(sSet))<br>print(‘————-‘)</p>
+<p>#创建冰冻集合<br>fset=frozenset()<br>print(type(fset))</p>
+<p>#列表 =》 元组  不能修改</p>
+<p>#集合 =》 冰冻集合   不能修改</p>
+<p>fset1=frozenset([‘老冰棍’,’凉凉’,’碎冰冰’,’余额’,’挂科’])<br>print(type(fset1))<br>print(fset1)<br>for i in fset1:<br>    print(i)<br>print([i for i in fset1])<br>str=’k:1|k1:2|k2:3|k3:4’<br>str_list=str.split(‘|’)<br>listk=[]<br>for i in str_list:</p>
+<pre><code>#i.split(&apos;:&apos;)
+listk.append(i.split(&apos;:&apos;))
+</code></pre><p>print(listk)<br>print(dict(listk))</p>
+<h1 id="print-dict-str-list"><a href="#print-dict-str-list" class="headerlink" title="print(dict(str_list))"></a>print(dict(str_list))</h1><p>#[[k,1],[]]</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,364 +243,118 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/23/day9/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day8/" class="archive-article-date">
-  	<time datetime="2018-07-23T10:35:15.468Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/23/day8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">I Python-列表相关操作</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day8/">I Python-列表相关操作</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#print-set8-pop"><span class="toc-number">1.</span> <span class="toc-text">print(set8.pop())</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#print-set8-pop-1"><span class="toc-number">2.</span> <span class="toc-text">print(set8.pop())</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#print-set8-pop-2"><span class="toc-number">3.</span> <span class="toc-text">print(set8.pop())</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#print-dict-str-list"><span class="toc-number">4.</span> <span class="toc-text">print(dict(str_list))</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day7/" class="archive-article-date">
-  	<time datetime="2018-07-23T10:35:03.461Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day7/">H Python-字符串相关操作</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/经典案例/" class="archive-article-date">
-  	<time datetime="2018-07-23T10:34:31.259Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/经典案例/">案例</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">作业</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day10/" class="archive-article-date">
-  	<time datetime="2018-07-23T10:27:57.594Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day10/">Q Python-字典相关操作</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day6/" class="archive-article-date">
-  	<time datetime="2018-07-23T10:10:54.889Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day6/">F Python-高级特性</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day5/" class="archive-article-date">
-  	<time datetime="2018-07-23T10:07:30.418Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day5/">E Python-控制语句</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day4/" class="archive-article-date">
-  	<time datetime="2018-07-23T09:52:21.057Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day4/">D Python-数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/day3/" class="archive-article-date">
-  	<time datetime="2018-07-23T09:28:19.726Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/day3/">C Python-数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/day2/" class="archive-article-date">
-  	<time datetime="2018-07-19T11:29:50.379Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/day2/">B python-数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2018/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -572,8 +378,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
