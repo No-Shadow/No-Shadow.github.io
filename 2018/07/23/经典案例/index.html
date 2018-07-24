@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="世界和平">
 <meta property="og:description" content="各类题型">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-23T10:33:43.253Z">
+<meta property="og:updated_time" content="2018-07-24T06:27:36.872Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="案例">
 <meta name="twitter:description" content="各类题型">
@@ -191,7 +191,37 @@ else:
 <h1 id="八个老师"><a href="#八个老师" class="headerlink" title="# 八个老师"></a># 八个老师</h1><h1 id="teachers-“A”-“B”-“C”-“D”-“E”-“F”-“G”-“H”"><a href="#teachers-“A”-“B”-“C”-“D”-“E”-“F”-“G”-“H”" class="headerlink" title="teachers = [“A”, “B”, “C”, “D”, “E”, “F”, “G”, “H”]"></a>teachers = [“A”, “B”, “C”, “D”, “E”, “F”, “G”, “H”]</h1><p>import random<br>office=[[],[],[]]<br>teachers = [“A”, “B”, “C”, “D”, “E”, “F”, “G”, “H”]<br>for i in teachers:<br>    office[random.randint(0,2)].append(i)<br>print(office)<br>for off in office:<br>    print(‘第%d间教室，有%d个老师’,%(office.index(off+1,len(off))))</p>
 <p>‘’’</p>
 <h1 id="写程序：模拟公司hr录入员工账号密码的程序。（10分）"><a href="#写程序：模拟公司hr录入员工账号密码的程序。（10分）" class="headerlink" title="写程序：模拟公司hr录入员工账号密码的程序。（10分）"></a>写程序：模拟公司hr录入员工账号密码的程序。（10分）</h1><h1 id="1-，员工的账号密码存储在这种数据类型中："><a href="#1-，员工的账号密码存储在这种数据类型中：" class="headerlink" title="1)，员工的账号密码存储在这种数据类型中："></a>1)，员工的账号密码存储在这种数据类型中：</h1><h1 id="user-list"><a href="#user-list" class="headerlink" title="user_list = ["></a>user_list = [</h1><h1 id="‘username’-’barry’-’password’-’1234’"><a href="#‘username’-’barry’-’password’-’1234’" class="headerlink" title="{‘username’:’barry’,’password’:’1234’},"></a>{‘username’:’barry’,’password’:’1234’},</h1><h1 id="‘username’-’alex’-’password’-’asdf’"><a href="#‘username’-’alex’-’password’-’asdf’" class="headerlink" title="{‘username’:’alex’,’password’:’asdf’},"></a>{‘username’:’alex’,’password’:’asdf’},</h1><h1 id="………"><a href="#………" class="headerlink" title="………"></a>………</h1><h1 id=""><a href="#" class="headerlink" title="]"></a>]</h1><h1 id="2-非法字符模板：board-‘张三’-’李小四’-’王二麻子’"><a href="#2-非法字符模板：board-‘张三’-’李小四’-’王二麻子’" class="headerlink" title="2)非法字符模板：board = [‘张三’,’李小四’,’王二麻子’]"></a>2)非法字符模板：board = [‘张三’,’李小四’,’王二麻子’]</h1><h1 id="3-Hr输入用户名，密码（可持续输入，如果想终止程序，那就在输入用户名时输入Q或者q退出程序），"><a href="#3-Hr输入用户名，密码（可持续输入，如果想终止程序，那就在输入用户名时输入Q或者q退出程序），" class="headerlink" title="3)Hr输入用户名，密码（可持续输入，如果想终止程序，那就在输入用户名时输入Q或者q退出程序），"></a>3)Hr输入用户名，密码（可持续输入，如果想终止程序，那就在输入用户名时输入Q或者q退出程序），</h1><h1 id="在Hr输入用户名时，检测此用户名是否有board里面的非法字符，如果有非法字符，"><a href="#在Hr输入用户名时，检测此用户名是否有board里面的非法字符，如果有非法字符，" class="headerlink" title="在Hr输入用户名时，检测此用户名是否有board里面的非法字符，如果有非法字符，"></a>在Hr输入用户名时，检测此用户名是否有board里面的非法字符，如果有非法字符，</h1><h1 id="则将非法字符替换成同数量的-（如王二麻子替换成-），然后添加到user-list中，如果没有非法字符，"><a href="#则将非法字符替换成同数量的-（如王二麻子替换成-），然后添加到user-list中，如果没有非法字符，" class="headerlink" title="则将非法字符替换成同数量的*（如王二麻子替换成**），然后添加到user_list中，如果没有非法字符，"></a>则将非法字符替换成同数量的*（如王二麻子替换成<em>**</em>），然后添加到user_list中，如果没有非法字符，</h1><h1 id="则直接添加到user-list中，每次添加成功后，打印出刚添加的用户名，密码。"><a href="#则直接添加到user-list中，每次添加成功后，打印出刚添加的用户名，密码。" class="headerlink" title="则直接添加到user_list中，每次添加成功后，打印出刚添加的用户名，密码。"></a>则直接添加到user_list中，每次添加成功后，打印出刚添加的用户名，密码。</h1><p>user_list=[]<br>t=0<br>flag=True  #循环添加可持续输入<br>while flag:<br>    name=input(‘输入用户名:’).strip() #strip()是去除name中的空格<br>    board=[‘你大爷’,’混蛋’,’傻逼’]<br>    if name.upper()==’Q’:<br>        flag=False  #退出循环<br>    else:<br>        for i in board:<br>            if i in name:  #判断i是否在name中<br>                name=name.replace(i,len(i)<em>‘</em>‘)  #将与name相同i转换成*在给name<br>        keys=input(‘请输入你的密码:’)<br>        user_list.append({})  #将空字典添加到列表中<br>        user_list[t][‘username’]=name  #将name值下标位置的username键<br>        user_list[t][‘password’]=keys  #同上<br>        t+=1<br>        print(user_list[-1])   #输出最后一次添加的键值<br>else:<br>    print(user_list) </p>
-
+<p>#三级菜单<br>‘’’<br>要求:<br>打印省、市、县三级菜单<br>可返回上一级<br>可随时退出程序</p>
+<p>menu = {<br>    “河北省”:{<br>        “石家庄”:[“新华区”,”桥西区桥东区”,”长安区”],<br>        “唐山市”:[“路北区”,”路南区”,”古冶区”],<br>        “秦皇岛市”:[“海港区”,”山海关区”,”卢龙县”]},<br>    “江苏”:{<br>        “南京市”:[“玄武区”,”下关区”,”六合区”,”溧水县”],<br>        “无锡市”:[“崇安区”,”北塘区”,”南长区”,”锡山区”]<br>        }<br>    }</p>
+<p>#显示的时候  编号   城市</p>
+<p>#提醒，输入的时候，输入编号</p>
+<p>#对应的信息  省份 编号  -  市 编号  -  地区 编号</p>
+<p>#q Q 退出  T t返回<br>flag=True<br>menu_list1=list(menu.keys())<br>while flag:<br>    for i,j in enumerate(menu_list1,1):#enumerate(）zheng加编号的<br>        print(i,j)<br>    add_input=input(‘输入你像查询的编号，退出请按Q/q:’)</p>
+<pre><code># flag=False
+if add_input.isdigit():
+    add_input=int(add_input)
+    if add_input&lt;=len(menu_list1):
+        while flag:
+            add_num1=menu_list1[add_input-1]
+            menu_list2=list(menu[add_num1].keys())
+            for i,j in enumerate(menu_list2,1):
+                print(i,j)
+            add_input2=input(&apos;请输入你像查询的城市编号，返回请按T/t，退出请按Q/q:&apos;)
+            if add_input2.isdigit():
+                pass
+            elif add_input2.upper()==&apos;T&apos;:
+                break
+            elif add_input2.upper()==&apos;Q&apos;:
+                flag=False
+            else:
+                print(&apos;输入有误&apos;)
+    else:
+        print(&apos;输入编号超出范围&apos;)
+elif add_input.upper()==&apos;Q&apos;:
+    break
+else:
+    print(&apos;输入有误&apos;)
+</code></pre>
       
 
       
